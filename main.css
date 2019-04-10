@@ -1,24 +1,23 @@
-
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+	background-color: #cccccc;
+}
 #camera, #camera--view, #camera--sensor, #camera--output{
     position: fixed;
-    height: 80%;
+    height: 100%;
     width: 100%;
-    object-fit: cover;
-	border: solid 1px grey;
+    	
 }
 
 #camera--view, #camera--sensor, #camera--output{
     transform: scaleX(-1);
     filter: FlipH;
-	display:none;
 }
-#camera
-{
-display:none;	
-}
-
 #camera--trigger{
-    width: 400px;
+    width: 300px;
 	height:auto;
     background-color: white;
     color: grey;
@@ -128,6 +127,15 @@ display:none;
   color: white;
 }
 
+.hero-image {
+  background-image: url("https://www.w3schools.com/w3images/photographer.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
 .center2 {
   position: absolute;
@@ -135,6 +143,10 @@ display:none;
   width: 100%;
   text-align: center;
   font-size: 18px;
+}
+.container2 {
+  position: relative;
+  top:20px;
 }
 
 img
@@ -166,9 +178,56 @@ img
 	margin-top:20px;
 	
 }
+
 .loggedin-div
 {
-	position:fixed;
-	bottom:10px;
+  position:fixed;
+  bottom:0px;
+  background: #5d8ffc;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
 }
+.logout-button
+
+{
+	width: 100px;
+	height:auto;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+	padding-left:10px;
+}
+
+
+.filter-button{
+	
+	width: 100px;
+	height:auto;
+    background-color: #5d8ffc;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: solid 1px grey;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+	padding-left:10px;
+}
+.filter-div
+{
+	
+}
+
 
